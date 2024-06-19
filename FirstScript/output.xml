@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-19T11:43:10.924310" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="E:\RobotFramework\Para_Bank\Para_bank_TA_Robotframework\FirstScript\Login.robot">
+<test id="s1-t1" name="Login to my account" line="12">
+<kw name="Go to Website Para Bank">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-19T11:43:11.354348" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com/'.</msg>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-19T11:43:11.354348" elapsed="3.512543"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-19T11:43:14.867890" elapsed="0.150019"/>
+</kw>
+<status status="PASS" start="2024-06-19T11:43:11.353313" elapsed="3.665578"/>
+</kw>
+<kw name="Enter username">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-19T11:43:15.020911" level="INFO">Typing text 'Test_Kareem' into text field 'xpath://*[@id="loginPanel"]/form/div[1]/input'.</msg>
+<arg>xpath://*[@id="loginPanel"]/form/div[1]/input</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T11:43:15.019894" elapsed="0.218997"/>
+</kw>
+<status status="PASS" start="2024-06-19T11:43:15.019894" elapsed="0.218997"/>
+</kw>
+<kw name="Enter password">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-19T11:43:15.240890" level="INFO">Typing password into text field 'xpath://*[@id="loginPanel"]/form/div[2]/input'.</msg>
+<msg time="2024-06-19T11:43:15.293888" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>xpath://*[@id="loginPanel"]/form/div[2]/input</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T11:43:15.239888" elapsed="0.133006"/>
+</kw>
+<status status="PASS" start="2024-06-19T11:43:15.239888" elapsed="0.133006"/>
+</kw>
+<kw name="Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-19T11:43:15.374894" level="INFO">Clicking button 'xpath://*[@id="loginPanel"]/form/div[3]/input'.</msg>
+<arg>xpath://*[@id="loginPanel"]/form/div[3]/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T11:43:15.373893" elapsed="1.133817"/>
+</kw>
+<status status="PASS" start="2024-06-19T11:43:15.373893" elapsed="1.134823"/>
+</kw>
+<kw name="Account Page is displayed">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2024-06-19T11:43:16.535721" level="INFO">Current page contains element 'xpath://*[@id="showOverview"]/h1'.</msg>
+<arg>xpath://*[@id="showOverview"]/h1</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2024-06-19T11:43:16.509712" elapsed="0.026998"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-19T11:43:16.560712" level="INFO">Current page contains text 'Accounts Overview'.</msg>
+<arg>Accounts Overview</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-19T11:43:16.536710" elapsed="0.024002"/>
+</kw>
+<status status="PASS" start="2024-06-19T11:43:16.508716" elapsed="0.051996"/>
+</kw>
+<status status="PASS" start="2024-06-19T11:43:11.353313" elapsed="5.208401"/>
+</test>
+<status status="PASS" start="2024-06-19T11:43:10.927316" elapsed="5.635397"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
