@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-19T17:11:57.924581" rpa="false" schemaversion="5">
+<suite id="s1" name="NewUser" source="E:\RobotFramework\Para_Bank\Para_bank_TA_Robotframework\FirstScript\Test Data\NewUser.robot">
+<test id="s1-t1" name=" New Testcases" line="20">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-06-19T17:11:58.386255" level="FAIL">Variable '${Newusername}' not found.</msg>
+<arg>New Username: ${Newusername}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="FAIL" start="2024-06-19T17:11:58.385219" elapsed="0.001036">Variable '${Newusername}' not found.</status>
+</kw>
+<status status="FAIL" start="2024-06-19T17:11:58.384220" elapsed="0.002828">Variable '${Newusername}' not found.</status>
+</test>
+<status status="FAIL" start="2024-06-19T17:11:57.927579" elapsed="0.460478"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="NewUser">NewUser</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-19T17:11:57.916618" level="WARN">Error in file 'E:\RobotFramework\Para_Bank\Para_bank_TA_Robotframework\FirstScript\Test Data\NewUser.robot' on line 29: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-06-19T17:11:58.382255" level="ERROR">Error in file 'E:\RobotFramework\Para_Bank\Para_bank_TA_Robotframework\FirstScript\Test Data\NewUser.robot' on line 32: Setting variable '${Newusername}' failed: Resolving variable '${Generate Unique Username(Kareem, Testing)}' failed: Variable '${Generate Unique Username}' not found.</msg>
+</errors>
+</robot>

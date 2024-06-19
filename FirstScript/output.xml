@@ -1,149 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-19T12:56:34.103893" rpa="false" schemaversion="5">
-<suite id="s1" name="LogintoMyAccount" source="E:\RobotFramework\Para_Bank\Para_bank_TA_Robotframework\FirstScript\LogintoMyAccount.robot">
-<test id="s1-t1" name="Login to my account" line="29">
-<kw name="Go to Website Para Bank">
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-19T15:33:19.651758" rpa="false" schemaversion="5">
+<suite id="s1" name="LogintoMyAccountV2" source="E:\RobotFramework\Para_Bank\Para_bank_TA_Robotframework\FirstScript\LogintoMyAccountV2.robot">
+<test id="s1-t1" name="Login to my account" line="11">
+<kw name="Go to Website Para Bank" owner="resource" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-19T12:56:34.507188" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com/'.</msg>
+<msg time="2024-06-19T15:33:20.154759" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com/'.</msg>
 <arg>${URL}</arg>
 <arg>browser=${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-19T12:56:34.507188" elapsed="4.719101"/>
+<status status="PASS" start="2024-06-19T15:33:20.153759" elapsed="7.746927"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-19T12:56:39.226289" elapsed="0.047001"/>
+<status status="PASS" start="2024-06-19T15:33:27.900686" elapsed="0.081000"/>
 </kw>
-<status status="PASS" start="2024-06-19T12:56:34.506176" elapsed="4.767114"/>
+<status status="PASS" start="2024-06-19T15:33:20.140761" elapsed="7.840925"/>
 </kw>
-<kw name="Enter username">
+<kw name="Enter username" owner="resource">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-06-19T12:56:39.275290" level="INFO">Typing text 'Test_Kareem' into text field 'xpath=//*[@id="loginPanel"]/form/div[1]/input'.</msg>
+<msg time="2024-06-19T15:33:27.982681" level="INFO">Typing text 'Kareem_Test_1' into text field 'xpath=//*[@id="loginPanel"]/form/div[1]/input'.</msg>
 <arg>${username_field}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-19T12:56:39.274287" elapsed="0.194001"/>
+<status status="PASS" start="2024-06-19T15:33:27.982681" elapsed="0.203999"/>
 </kw>
-<status status="PASS" start="2024-06-19T12:56:39.274287" elapsed="0.194001"/>
+<status status="PASS" start="2024-06-19T15:33:27.982681" elapsed="0.203999"/>
 </kw>
-<kw name="Enter password">
+<kw name="Enter password" owner="resource">
 <kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-06-19T12:56:39.469286" level="INFO">Typing password into text field 'xpath=//*[@id="loginPanel"]/form/div[2]/input'.</msg>
-<msg time="2024-06-19T12:56:39.514287" level="INFO">Temporally setting log level to: NONE</msg>
+<msg time="2024-06-19T15:33:28.187681" level="INFO">Typing password into text field 'xpath=//*[@id="loginPanel"]/form/div[2]/input'.</msg>
+<msg time="2024-06-19T15:33:28.233681" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>${password_field}</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-19T12:56:39.469286" elapsed="0.112008"/>
+<status status="PASS" start="2024-06-19T15:33:28.187681" elapsed="0.143000"/>
 </kw>
-<status status="PASS" start="2024-06-19T12:56:39.468288" elapsed="0.113006"/>
+<status status="PASS" start="2024-06-19T15:33:28.187681" elapsed="0.143000"/>
 </kw>
-<kw name="Login">
+<kw name="Login" owner="resource">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-06-19T12:56:39.582286" level="INFO">Clicking button 'xpath=//*[@id="loginPanel"]/form/div[3]/input'.</msg>
+<msg time="2024-06-19T15:33:28.331679" level="INFO">Clicking button 'xpath=//*[@id="loginPanel"]/form/div[3]/input'.</msg>
 <arg>${login_button}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-06-19T12:56:39.581294" elapsed="0.664015"/>
+<status status="PASS" start="2024-06-19T15:33:28.331679" elapsed="0.986265"/>
 </kw>
-<status status="PASS" start="2024-06-19T12:56:39.581294" elapsed="0.665017"/>
+<status status="PASS" start="2024-06-19T15:33:28.331679" elapsed="0.986265"/>
 </kw>
-<kw name="Account Page is displayed">
+<kw name="Account Page is displayed" owner="resource">
 <kw name="Page Should Contain Element" owner="SeleniumLibrary">
-<msg time="2024-06-19T12:56:40.265311" level="INFO">Current page contains element 'xpath=//*[@id="showOverview"]/h1'.</msg>
+<msg time="2024-06-19T15:33:29.594944" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-19T15:33:29.595970" level="FAIL">Page should have contained element 'xpath=//*[@id="showOverview"]/h1' but did not.</msg>
 <arg>${account_page_header}</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<status status="PASS" start="2024-06-19T12:56:40.247306" elapsed="0.018005"/>
+<status status="FAIL" start="2024-06-19T15:33:29.318942" elapsed="0.286004">Page should have contained element 'xpath=//*[@id="showOverview"]/h1' but did not.</status>
 </kw>
 <kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-06-19T12:56:40.282307" level="INFO">Current page contains text 'Accounts Overview'.</msg>
 <arg>Accounts Overview</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-06-19T12:56:40.265311" elapsed="0.016996"/>
+<status status="NOT RUN" start="2024-06-19T15:33:29.604946" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-06-19T12:56:40.246311" elapsed="0.035996"/>
+<status status="FAIL" start="2024-06-19T15:33:29.318942" elapsed="0.286004">Page should have contained element 'xpath=//*[@id="showOverview"]/h1' but did not.</status>
 </kw>
-<status status="PASS" start="2024-06-19T12:56:34.505281" elapsed="5.778026"/>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-19T15:33:29.605942" elapsed="3.587996"/>
+</kw>
+<status status="FAIL" start="2024-06-19T15:33:20.136760" elapsed="13.058141">Page should have contained element 'xpath=//*[@id="showOverview"]/h1' but did not.</status>
 </test>
-<test id="s1-t2" name="Verify my account balance" line="36">
-<kw name="Account number is correct">
+<test id="s1-t2" name="Verify my account balance" line="18">
+<kw name="Go to Website Para Bank" owner="resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-19T15:33:33.196902" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com/'.</msg>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-19T15:33:33.196902" elapsed="3.883000"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-19T15:33:37.080903" elapsed="0.178001"/>
+</kw>
+<status status="PASS" start="2024-06-19T15:33:33.195901" elapsed="4.063003"/>
+</kw>
+<kw name="Enter username" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-19T15:33:37.271908" level="INFO">Typing text 'Kareem_Test_1' into text field 'xpath=//*[@id="loginPanel"]/form/div[1]/input'.</msg>
+<arg>${username_field}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T15:33:37.271908" elapsed="0.224995"/>
+</kw>
+<status status="PASS" start="2024-06-19T15:33:37.270915" elapsed="0.225988"/>
+</kw>
+<kw name="Enter password" owner="resource">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-19T15:33:37.498906" level="INFO">Typing password into text field 'xpath=//*[@id="loginPanel"]/form/div[2]/input'.</msg>
+<msg time="2024-06-19T15:33:37.560903" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T15:33:37.497903" elapsed="0.150000"/>
+</kw>
+<status status="PASS" start="2024-06-19T15:33:37.497903" elapsed="0.150000"/>
+</kw>
+<kw name="Login" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-19T15:33:37.649903" level="INFO">Clicking button 'xpath=//*[@id="loginPanel"]/form/div[3]/input'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T15:33:37.649903" elapsed="0.443999"/>
+</kw>
+<status status="PASS" start="2024-06-19T15:33:37.648904" elapsed="0.444998"/>
+</kw>
+<kw name="Account number is correct" owner="resource">
 <kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<msg time="2024-06-19T15:34:08.539870" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-19T15:34:08.539870" level="FAIL">Element with locator 'xpath=//*[@id="accountTable"]/tbody/tr[1]/td/a' not found.</msg>
 <arg>${account_field}</arg>
 <arg>${Account}</arg>
 <arg>30</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2024-06-19T12:56:40.284308" elapsed="0.706161"/>
+<status status="FAIL" start="2024-06-19T15:33:38.095905" elapsed="30.446967">Element with locator 'xpath=//*[@id="accountTable"]/tbody/tr[1]/td/a' not found.</status>
 </kw>
 <kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-06-19T12:56:40.991469" level="INFO">Verifying element 'xpath=//*[@id="accountTable"]/tbody/tr[1]/td/a' contains exact text '14343'.</msg>
 <arg>${account_field}</arg>
 <arg>${Account}</arg>
 <doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-06-19T12:56:40.990469" elapsed="0.021330"/>
+<status status="NOT RUN" start="2024-06-19T15:34:08.543872" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-06-19T12:56:40.284308" elapsed="0.727491"/>
+<status status="FAIL" start="2024-06-19T15:33:38.094904" elapsed="30.448968">Element with locator 'xpath=//*[@id="accountTable"]/tbody/tr[1]/td/a' not found.</status>
 </kw>
-<kw name="Balance is correct">
-<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
-<arg>${Balance_field}</arg>
-<arg>${Balance}</arg>
-<arg>30</arg>
-<doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2024-06-19T12:56:41.012800" elapsed="0.021999"/>
+<kw name="Balance is correct" owner="resource">
+<status status="NOT RUN" start="2024-06-19T15:34:08.553873" elapsed="0.000000"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-06-19T12:56:41.035804" level="INFO">Verifying element 'xpath=//*[@id="accountTable"]/tbody/tr[1]/td[2]' contains exact text '$50000.00'.</msg>
-<arg>${Balance_field}</arg>
-<arg>${Balance}</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-06-19T12:56:41.034799" elapsed="0.018106"/>
+<kw name="Available Amount is correct" owner="resource">
+<status status="NOT RUN" start="2024-06-19T15:34:08.555869" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-06-19T12:56:41.011799" elapsed="0.041106"/>
+<kw name="Total is correct" owner="resource">
+<status status="NOT RUN" start="2024-06-19T15:34:08.561868" elapsed="0.000000"/>
 </kw>
-<kw name="Available Amount is correct">
-<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
-<arg>${AvailableAmount_field}</arg>
-<arg>${AvailableAmount}</arg>
-<arg>30</arg>
-<doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2024-06-19T12:56:41.053907" elapsed="0.023148"/>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-19T15:34:08.562868" elapsed="2.242567"/>
 </kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-06-19T12:56:41.077055" level="INFO">Verifying element 'xpath=//*[@id="accountTable"]/tbody/tr[1]/td[3]' contains exact text '$50000.00'.</msg>
-<arg>${AvailableAmount_field}</arg>
-<arg>${AvailableAmount}</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-06-19T12:56:41.077055" elapsed="0.018923"/>
-</kw>
-<status status="PASS" start="2024-06-19T12:56:41.052905" elapsed="0.043073"/>
-</kw>
-<kw name="Total is correct">
-<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
-<arg>${Total_field}</arg>
-<arg>${Total}</arg>
-<arg>30</arg>
-<doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2024-06-19T12:56:41.096978" elapsed="0.022553"/>
-</kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-06-19T12:56:41.120559" level="INFO">Verifying element 'xpath=//*[@id="accountTable"]/tbody/tr[2]/td[2]/b' contains exact text '$50000.00'.</msg>
-<arg>${Total_field}</arg>
-<arg>${Total}</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-06-19T12:56:41.120559" elapsed="0.020181"/>
-</kw>
-<status status="PASS" start="2024-06-19T12:56:41.095978" elapsed="0.044762"/>
-</kw>
-<status status="PASS" start="2024-06-19T12:56:40.284308" elapsed="0.857433"/>
+<status status="FAIL" start="2024-06-19T15:33:33.195901" elapsed="37.610799">Element with locator 'xpath=//*[@id="accountTable"]/tbody/tr[1]/td/a' not found.</status>
 </test>
-<status status="PASS" start="2024-06-19T12:56:34.105894" elapsed="7.036841"/>
+<test id="s1-t3" name="Log out" line="27">
+<kw name="Go to Website Para Bank" owner="resource" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-19T15:34:10.809716" level="INFO">Opening browser 'chrome' to base url 'https://parabank.parasoft.com/'.</msg>
+<arg>${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-19T15:34:10.809716" elapsed="3.769864"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-19T15:34:14.579580" elapsed="0.135000"/>
+</kw>
+<status status="PASS" start="2024-06-19T15:34:10.809716" elapsed="3.904864"/>
+</kw>
+<kw name="Enter username" owner="resource">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-19T15:34:14.716582" level="INFO">Typing text 'Kareem_Test_1' into text field 'xpath=//*[@id="loginPanel"]/form/div[1]/input'.</msg>
+<arg>${username_field}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T15:34:14.715578" elapsed="0.187003"/>
+</kw>
+<status status="PASS" start="2024-06-19T15:34:14.715578" elapsed="0.187003"/>
+</kw>
+<kw name="Enter password" owner="resource">
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-19T15:34:14.906580" level="INFO">Typing password into text field 'xpath=//*[@id="loginPanel"]/form/div[2]/input'.</msg>
+<msg time="2024-06-19T15:34:14.964575" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${password_field}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T15:34:14.906580" elapsed="0.134998"/>
+</kw>
+<status status="PASS" start="2024-06-19T15:34:14.905578" elapsed="0.136000"/>
+</kw>
+<kw name="Login" owner="resource">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-19T15:34:15.042579" level="INFO">Clicking button 'xpath=//*[@id="loginPanel"]/form/div[3]/input'.</msg>
+<arg>${login_button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T15:34:15.042579" elapsed="0.460008"/>
+</kw>
+<status status="PASS" start="2024-06-19T15:34:15.042579" elapsed="0.463001"/>
+</kw>
+<kw name="Log out" owner="resource">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-19T15:34:15.525605" level="INFO">Clicking element 'xpath= //a[text()='Log Out']'.</msg>
+<msg time="2024-06-19T15:34:15.721591" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-19T15:34:15.722577" level="FAIL">Element with locator 'xpath= //a[text()='Log Out']' not found.</msg>
+<arg>${Logout_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-19T15:34:15.524580" elapsed="0.202995">Element with locator 'xpath= //a[text()='Log Out']' not found.</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>${login_button}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-19T15:34:15.727575" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-19T15:34:15.523612" elapsed="0.204963">Element with locator 'xpath= //a[text()='Log Out']' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-19T15:34:15.728575" elapsed="2.312062"/>
+</kw>
+<status status="FAIL" start="2024-06-19T15:34:10.808717" elapsed="7.232922">Element with locator 'xpath= //a[text()='Log Out']' not found.</status>
+</test>
+<status status="FAIL" start="2024-06-19T15:33:19.653760" elapsed="58.392516"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="LogintoMyAccount">LogintoMyAccount</stat>
+<stat pass="0" fail="3" skip="0" id="s1" name="LogintoMyAccountV2">LogintoMyAccountV2</stat>
 </suite>
 </statistics>
 <errors>
