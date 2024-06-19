@@ -4,7 +4,7 @@ Library    SeleniumLibrary
 *** Variables ***
 ${URL}           https://parabank.parasoft.com/
 ${BROWSER}       chrome
-${username}      Test_Kareem
+${username}      Kareem_Test_1
 ${password}      123456
 ${Account}       14343
 ${Balance}       $50000.00
@@ -22,6 +22,7 @@ ${account_field}    xpath=//*[@id="accountTable"]/tbody/tr[1]/td/a
 ${Balance_field}    xpath=//*[@id="accountTable"]/tbody/tr[1]/td[2]
 ${AvailableAmount_field}    xpath=//*[@id="accountTable"]/tbody/tr[1]/td[3]
 ${Total_field}    xpath=//*[@id="accountTable"]/tbody/tr[2]/td[2]/b
+${Logout_button}    xpath= //a[text()='Log Out']
 
 
 
@@ -38,6 +39,10 @@ Verify my account balance
      Balance is correct
      Available Amount is correct
      Total is correct
+
+Log out
+    Log out
+
 
 *** Keywords ***
 Go to Website Para Bank
@@ -73,3 +78,6 @@ Total is correct
     Wait Until Element Contains    ${Total_field}    ${Total}    30
     Element Text Should Be    ${Total_field}    ${Total}
 
+Log out
+     Click Element    ${Logout_button}
+     Element Should Be Visible    ${login_button}
