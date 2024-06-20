@@ -16,9 +16,13 @@ Register New User
              Generate Unique Username
              Input User Details
              Submit Registration
-             Capture Registration Page Screenshot
              verify the new user is created
+             Capture Registration Page Screenshot
 
+Login to my account
+            Login with valid username and password     ${generated_username}        ${Newpassword}
+
+    
 *** Keywords ***
 Start Register
     Click Element    ${Register_button}
@@ -46,3 +50,4 @@ verify the new user is created
 
 Capture Registration Page Screenshot
     Capture Page Screenshot    filename=RegistrationPage.png
+
